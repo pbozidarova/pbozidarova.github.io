@@ -1,0 +1,80 @@
+@mixin CircleBorder ($type) {
+    @if $type==white-right {
+        border-width: 0 0.8em 0 0;
+        // border-image-source: url('/media/elipse-borders/transparent-elipse-border-right.svg');
+        border-image-source: url('/media/elipse-borders/white-elipse-shadow-right.svg');
+        border-image-width: 0 0.8em 0 0;
+        border-image-slice: 0 35 0 0;
+        // border-image-outset:  0 0.8em 0 0;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+    @else if $type==white-down{
+            border-width: 0 0 0.8em 0;
+            // border-image-source: url('/media/elipse-borders/transparent-elipse-border.png');
+            border-image-source: url('/media/elipse-borders/white-elipse-shadow-down.svg');
+            border-image-width: 0 0 0.8em;;
+            border-image-slice: 0 0 35 0;
+            // border-image-outset: 0 0 0.8em;
+            border-image-repeat: round;
+            // border-style: solid;
+    }
+    @else if $type==blue-right {
+        border-width: 0 0.8em 0 0;
+        // border-image-source: url('/media/elipse-borders/transparent-elipse-border-right.svg');
+        border-image-source: url('/media/elipse-borders/blue-elipse-shadow-right.svg');
+        border-image-width: 0 0.8em 0 0;
+        border-image-slice: 0 35 0 0;
+        // border-image-outset:  0 0.8em 0 0;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+    @else if $type==primary-blue{
+        border-width: 0 0 0.625em 0;
+        border-image-source: url('/media/elipse-borders/primary-elipse-border.svg');
+        border-image-width: 0 0 0.625em;;
+        border-image-slice: 0 0 15 0;
+        border-image-outset: 0 0 0.625em;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+    @else if $type==yellow-down{
+        border-width: 0 0 0.625em 0;
+        border-image-source: url('/media/elipse-borders/yellow-elipse-border.svg');
+        border-image-width: 0 0 0.625em;;
+        border-image-slice: 0 0 15 0;
+        border-image-outset: 0 0 0.625em;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+    @else if $type==yellow-right{
+        border-width: 0 0.625em 0 0;
+        border-image-source: url('/media/elipse-borders/yellow-elipse-border-right.svg');
+        border-image-width: 0 0.625em 0 0;
+        border-image-slice: 0 15 0 0;
+        border-image-outset: 0 0 0.625em;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+  
+    @else if $type==down-half-elipse{
+        border-width: 0 0 0.4rem 0;
+        border-image-source: url('/media/elipse-borders/white-elipse-shadow-secondary-background-down-half.svg');
+        border-image-width: 0 0 0.4em;;
+        border-image-slice: 0 0 35 0;
+        // border-image-outset: 0 0 0.625rem;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+
+    @else if $type==upper-half-elipse{
+        border-width: 0 0 0.4rem 0;
+        border-image-source: url('/media/elipse-borders/white-elipse-shadow-secondary-background-upper-half.svg');
+        border-image-width: 0 0 0.4rem;;
+        border-image-slice: 0 0 35 0;
+        // border-image-outset: 0 0 0.625rem;
+        border-image-repeat: round;
+        border-style: solid;
+    }
+    
+}

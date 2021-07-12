@@ -1,0 +1,53 @@
+.team {
+
+    .o-wrapper{
+
+        text-align: center;
+        max-width: 60%;
+
+        @include for-tablet-portrait-up{
+            max-width: 80%;
+
+        }
+
+        @include for-tablet-landscape-up{
+            column-gap: 3em;
+            row-gap: 2em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &-member{
+        display: grid;
+        align-items: center;
+        padding-bottom: 2em;
+        // max-width: 80%;
+        // margin: 0 auto;
+    }
+    
+    &-member__img{
+        margin: 0 auto;
+        height: 13em;
+        width: 13em;
+        display: flex;
+        border: 0.1em solid $primary-color;
+        border-radius: 50%;
+        @include BoxShadow(3);
+        overflow: hidden;
+        
+    }
+
+    &-member__name{
+
+    }
+
+    &-member__role{
+
+    }
+
+    &-member__description{
+        text-align: left;
+    }
+
+}

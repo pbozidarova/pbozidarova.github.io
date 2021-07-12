@@ -1,0 +1,22 @@
+.banner{
+    // position: absolute;
+    // bottom: -35em;
+    // left: 20%;
+    background: $background-light;
+    // max-width: 60%;
+    z-index: 6;
+    padding: 3em 4em;
+    @include BoxShadow(2);
+    // border: 0.2em solid $background-light;
+    // border-radius: 0.5em;
+    text-align: center;
+
+    &__title{
+        padding-bottom: 1em;
+    }
+
+    & p {
+        padding-bottom: 1em;
+    }
+}
+
