@@ -117,6 +117,7 @@ li div:last-child {
   display: grid;
   border-top: 3em solid #026670;
   border-bottom: 3em solid #026670;
+  /* CSS Smooth Scroll */
 }
 
 @media (min-width: 1200px) {
@@ -156,6 +157,19 @@ section header div {
 
 section header h4 {
   padding: 0.5em;
+}
+
+.technical-skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 1200px) {
+  .technical-skills ul {
+    display: block;
+  }
 }
 
 .work-experience__article-header {

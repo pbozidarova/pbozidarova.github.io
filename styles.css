@@ -61,7 +61,7 @@ main {
   padding-bottom: 10%;
 }
 
-main ::after {
+main::after {
   content: "";
   rotate: -5deg;
   height: 15%;
@@ -188,4 +188,43 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.experince {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.experince > div {
+  padding: 1em;
+  width: 40%;
+  border: 1px solid #026670;
+}
+
+.experince-odd {
+  display: -ms-grid;
+  display: grid;
+}
+
+.experince-odd::after {
+  content: "middle";
+  display: inline-block;
+  border: 1px solid #026670;
+}
+
+.experince-even {
+  display: -ms-grid;
+  display: grid;
+  margin-left: auto;
+}
+
+.experince .scale {
+  margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  padding: 0;
+  left: 50%;
+  width: 0.5em;
+  background-color: #026670;
 }
