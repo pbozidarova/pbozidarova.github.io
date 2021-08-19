@@ -267,5 +267,32 @@
         </div>
     </footer>
 
+    
 </body>
+<script>
+
+    function animateWhenInViewport (animationName, animatedClass) {
+            // Animate even
+            const inViewportEven = (entries, observer) => {
+                    entries.forEach(entry => {
+                        entry.target.classList.toggle(animationName, entry.isIntersecting);
+                    });
+            };
+
+            const ObsEven = new IntersectionObserver(inViewportEven);
+            const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+            // Attach observer to every [data-inviewport] element:
+            const ELs_inViewportEven = document.querySelectorAll(animatedClass);
+                
+            ELs_inViewportEven.forEach(EL => {
+                ObsEven.observe(EL, obsOptions);
+            });
+    }
+
+    animateWhenInViewport("animate-even", ".experince-even");
+    animateWhenInViewport("animate-odd", ".experince-odd");
+    animateWhenInViewport("animate-project", ".project");
+    
+</script>
 </html>

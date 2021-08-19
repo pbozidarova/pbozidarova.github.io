@@ -48,6 +48,60 @@ p, li, a {
   font-size: 2em;
 }
 
+@-webkit-keyframes rotateOdd {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@keyframes rotateOdd {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@-webkit-keyframes rotateEven {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@keyframes rotateEven {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    margin-left: 7em;
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: 7em;
+    opacity: 0;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +117,8 @@ main {
 
 main::after {
   content: "";
-  rotate: -5deg;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
   height: 15%;
   width: 150%;
   position: absolute;
@@ -84,7 +139,7 @@ section:last-child {
 }
 
 header {
-  height: 40vh;
+  height: 30vh;
   overflow: hidden;
   position: relative;
   display: -webkit-box;
@@ -95,12 +150,13 @@ header {
 
 header ::after {
   content: "";
-  rotate: -5deg;
-  height: 50%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  height: 80%;
   width: 160%;
   position: absolute;
-  left: -10%;
-  bottom: -45%;
+  left: -50%;
+  bottom: -80%;
   z-index: 1;
   background-color: #FEF9C7;
   -webkit-box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.14), inset 0 3px 1px -2px rgba(0, 0, 0, 0.12), inset 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -232,6 +288,13 @@ li {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.animate-project {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
 }
 
 .skills > div {
@@ -377,4 +440,18 @@ li {
 
 .cv a {
   text-transform: uppercase;
+}
+
+.animate-even {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: rotateEven;
+          animation-name: rotateEven;
+}
+
+.animate-odd {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: rotateOdd;
+          animation-name: rotateOdd;
 }
