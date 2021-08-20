@@ -112,6 +112,7 @@ li div:last-child {
 
 .site-content {
   max-width: 80%;
+  min-width: 435px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
