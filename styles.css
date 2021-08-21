@@ -161,12 +161,6 @@ header {
   }
 }
 
-@media (min-width: 1200px) {
-  header {
-    height: 30vh;
-  }
-}
-
 header::after {
   content: "";
   -webkit-transform: rotate(-5deg);
@@ -175,7 +169,7 @@ header::after {
   width: 120%;
   position: absolute;
   left: -10%;
-  bottom: -45%;
+  bottom: -30%;
   z-index: 0;
   background-color: #FEF9C7;
   -webkit-box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.14), inset 0 3px 1px -2px rgba(0, 0, 0, 0.12), inset 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -190,7 +184,7 @@ header::after {
 
 @media (min-width: 1200px) {
   header::after {
-    bottom: -10%;
+    bottom: -18%;
   }
 }
 
