@@ -37,9 +37,10 @@ h1, h2, h3 {
   line-height: 2em;
 }
 
-p, li, a {
+p, li, a, span, div {
   font-family: 'Roboto Slab', serif;
   line-height: 1.5em;
+  font-size: 1rem;
 }
 
 .fab {
